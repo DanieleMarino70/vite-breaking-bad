@@ -9,7 +9,7 @@ export default {
             store,
         }
     },
-    props: {pic: String, name: String, atype: String}
+    props: {pic: String, name: String, atype: String, selected: String}
 
 }
 
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <div class="col">
+    <div class="col" v-if="atype == selected">
         <div class="p-3">
             <img :src="pic" alt="" class="img-fluid">
             <h6 class="text-white">{{ name }}</h6>
