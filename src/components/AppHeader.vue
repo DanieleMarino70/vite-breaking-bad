@@ -2,7 +2,7 @@
 export default{
     data(){
         return{
-            
+
         }
     }
 
@@ -19,6 +19,6 @@ export default{
     </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
