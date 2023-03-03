@@ -9,19 +9,19 @@ export default {
             store,
         }
     },
-    props: {pic: String, name: String, atype: String, selected: String}
+    props: {pic: String, name: String, type: String, selected: String}
 
 }
 
 
 </script>
-
+<!-- v-if="atype == selected" -->
 <template>
-    <div class="col" v-if="atype == selected">
+    <div class="col" v-if="type == store.optionChosed">
         <div class="p-3">
             <img :src="pic" alt="" class="img-fluid">
             <h6 class="text-white">{{ name }}</h6>
-            <p>{{ atype }}</p>
+            <p>{{ type }}</p>
         </div>
     </div> 
 </template>
